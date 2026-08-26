@@ -1,0 +1,13 @@
+type: image
+split: val
+root: /path/to/data
+seq: basketball
+ext: jpg
+use_cams: False           # single image → static camera
+name: ${data.seq}
+sources:
+  # `images` only selects the per-dataset base_path (must contain the dataset key,
+  # e.g. "intercap"); the input image + milo_init.npz + object/keypoints/metadata
+  # are read from <base_path>/<seq>/ (see data/dataset.py:base_path_for).
+  images: ${data.root}/intercap_test/${data.seq}
+  cameras: ""

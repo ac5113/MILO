@@ -1,0 +1,43 @@
+optim:
+  options:
+    robust_loss_type: "bisquare"
+    robust_tuning_const: 4.6851
+    joints2d_sigma: 100.0
+    lr: 1.0
+    lbfgs_max_iter: 20
+    save_every: 20
+    vis_every: -1
+    max_chunk_steps: 20
+    save_meshes: False
+    use_chamfer: True
+
+  root:
+    num_iters: 30
+
+  smooth:
+    opt_scale: False
+    num_iters: 60
+
+  # Two stages: [root_fit, smooth_fit]
+  loss_weights:
+    joints2d: [0.001, 0.001]
+    bg2d: [0.0, 0.0]
+    cam_R_smooth: [0.0, 0.0]
+    cam_t_smooth: [0.0, 0.0]
+    joints3d: [0.0, 0.0]
+    joints3d_smooth: [1.0, 10.0]
+    verts3d: [0.0, 0.0]
+    points3d: [0.0, 1000.0] # intercap
+    pose_prior: [0.04, 0.04]
+    hand_pose_prior: [0.04, 0.04]
+    hand_pose_smooth: [0.0, 0.0]
+    shape_prior: [0.05, 0.05]
+    obj_verts2d: [0.0, 0.0]
+    hum_depth: [0.0, 0.0]
+    obj_depth: [0.0, 0.0]
+    renderer_iou: [0.0, 0.0]
+    renderer_photo: [0.0, 0.0]
+    renderer_dt: [0.0, 0.0]
+    renderer_depth: [0.0, 0.0]
+    hum_correspondence: [10.0, 50.0] # intercap
+    init_pose_reg: [0.0, 10.0]

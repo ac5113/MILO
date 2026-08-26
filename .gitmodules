@@ -1,0 +1,21 @@
+[submodule "third-party/ViTPose"]
+	path = third-party/ViTPose
+	url = https://github.com/ViTAE-Transformer/ViTPose
+[submodule "third-party/Grounded-SAM-2"]
+	path = third-party/Grounded-SAM-2
+	url = https://github.com/IDEA-Research/Grounded-SAM-2.git
+[submodule "third-party/Hunyuan3D-2"]
+	path = third-party/Hunyuan3D-2
+	url = https://github.com/Tencent/Hunyuan3D-2.git
+[submodule "third-party/hamer"]
+	path = third-party/hamer
+	url = https://github.com/geopavlakos/hamer.git
+[submodule "third-party/GeoAware-SC"]
+	path = third-party/GeoAware-SC
+	url = https://github.com/Junyi42/GeoAware-SC.git
+[submodule "third-party/Fast-Robust-ICP"]
+	path = third-party/Fast-Robust-ICP
+	url = https://github.com/yaoyx689/Fast-Robust-ICP.git
+[submodule "third-party/sam-3d-objects"]
+	path = third-party/sam-3d-objects
+	url = https://github.com/facebookresearch/sam-3d-objects.git

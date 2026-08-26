@@ -1,0 +1,45 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# data / weights / run outputs
+*outputs*
+*renders*
+*cache*
+*checkpoints*
+*_DATA
+_DATA_backup/
+demo/
+datasets/
+run_*_eval.sh
+
+# logs / scratch
+*.swp
+*.out
+*.err
+*.log
+
+# packaging
+build/
+dist/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# environments
+.env
+.venv
+env/
+venv/
+
+# tooling
+.ipynb_checkpoints
+.mypy_cache/
+.pytest_cache/
+.python-version
+
+# internal working tracker (not for release)
+PROGRESS.md

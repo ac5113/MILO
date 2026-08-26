@@ -1,0 +1,45 @@
+defaults:
+  - data: posetrack
+  - optim
+  - _self_
+
+
+model:
+  use_init: True
+  opt_cams: False
+  opt_scale: True
+  opt_obj: True
+  # opt_obj: False
+
+overwrite: True
+run_opt: False
+run_vis: False
+vis:
+  phases:
+    - smooth_fit
+    - root_fit
+    - input
+  render_views:
+    - src_cam
+    - above
+    - side
+  make_grid: True
+  overwrite: False
+
+paths:
+  smpl: _DATA/body_models/smplh/neutral/model.npz
+  smpl_kid: _DATA/body_models/smpl_kid_template.npy
+  vposer: _DATA/body_models/vposer_v1_0
+
+fps: 30
+log_root: ../../outputs/logs
+log_dir: ${log_root}/${data.type}-${data.split}
+exp_name: milo
+
+hydra:
+  job:
+    chdir: True
+  run:
+    # Consolidated output: the fit writes into the sequence folder (<data.root>/<seq>/fit),
+    # alongside every other per-sequence artifact (see milo.pipeline.config.fit_dir).
+    dir: ${data.root}/${data.seq}/fit

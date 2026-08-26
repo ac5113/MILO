@@ -1,0 +1,14 @@
+type: image
+split: val
+# data.root is the directory that holds the sequence folders. Each <seq>/ has the
+# input image, milo_init.npz, keypoints_3d_ransac*.npy, the LRM mesh
+# (full_img_textured.glb/.obj) and, optionally, metadata.npz (camera intrinsics;
+# a default focal = 0.5*(H+W) with principal at the image centre is used if absent).
+root: /path/to/data_root
+seq: example
+ext: jpg
+use_cams: False           # single image → static camera
+name: ${data.seq}
+sources:
+  images: ${data.root}/${data.seq}
+  cameras: ""
