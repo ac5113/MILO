@@ -3,16 +3,13 @@
 Official implementation of **"Reconstructing Humans and Objects in Interaction using Large Reconstruction Models"** (ECCV 2026).
 
 <p align="center">
-  <a href="https://ac5113.github.io/MILO"><img src="https://img.shields.io/website?url=https%3A%2F%2Fac5113.github.io%2FMILO%2F&label=Project%20Page&up_message=Online&up_color=CAB7A5&down_message=Offline&down_color=%23FF3F4D&logo=googlechrome&logoColor=white"></a>
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-%23B31C1C?logo=arxiv&logoSize=auto"></a>
-  <a href="https://ac5113.github.io/MILO/static/milo.pdf"><img src="https://img.shields.io/badge/Paper-PDF-%2347A141?logo=adobeacrobatreader&logoColor=white"></a>
+  <a href="https://arxiv.org/abs/2608.27407"><img src="https://img.shields.io/badge/arXiv-2608.27407-%23B31C1C?logo=arxiv&logoSize=auto"></a>
+  <a href="https://ac5113.github.io/MILO"><img src="https://img.shields.io/website?url=https%3A%2F%2Fac5113.github.io%2FMILO%2F&label=Project%20Page&up_message=Online&up_color=%2347A141&down_message=Offline&down_color=%23FF3F4D&logo=googlechrome&logoColor=white"></a>
 </p>
 
 <p align="center">
   <img src="teaser_hero.gif" width="100%">
 </p>
-
-> ⚠️ **Placeholder links.** The project page / arXiv / paper URLs above will be updated upon release.
 
 ---
 
